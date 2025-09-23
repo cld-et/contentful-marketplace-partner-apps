@@ -68,6 +68,10 @@ function evaluator(template: string, context: Record<string, unknown>, sdk: Fiel
   }
 }
 
+export function dataBinder(template: string, context: Record<string, unknown>, sdk: FieldAppSDK) {
+  return `${evaluator(template, context, sdk)}`;
+}
+
 /*
  * To open the media library dialog with a scoped search filter you should pass the resource type (image, video) and the sdk instance (to get the instance parameters)
  * The function returns a string filter expression, or undefined if the expression is empty
@@ -82,10 +86,21 @@ export function mediaLibraryFilter(type: string, sdk: FieldAppSDK<AppInstallatio
 
   const shouldAppendImplicitAndOperator = searchFilterTemplate.match(/^\s*(AND|OR).*$/) || !searchFilterTemplate;
   const defaultBooleanOperator = shouldAppendImplicitAndOperator ? '' : ' AND ';
-  const searchFilter = ` ${evaluator(searchFilterTemplate, binding, sdk)}`;
+  const searchFilter = dataBinder(searchFilterTemplate, binding, sdk);
   expression = `${expression}${defaultBooleanOperator}${searchFilter}`;
   if (expression.trim() === '') {
     return undefined;
   }
   return expression;
+}
+
+export function transformationTemplateBinding(template: string, asset: CloudinaryAsset, sdk: FieldAppSDK) {
+  const binding = {
+    entry: sdk.entry,
+  };
+  const boundTemplate = dataBinder(template, binding, sdk);
+
+  asset.bound_transformation = boundTemplate;
+
+  return asset;
 }
