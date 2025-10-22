@@ -1,5 +1,5 @@
 import { FieldAppSDK, SerializedJSONValue } from '@contentful/app-sdk';
-import { AssetCard, DateTime, DragHandle, Menu, MenuDivider, MenuItem } from '@contentful/f36-components';
+import { AssetCard, Button, DateTime, DragHandle, Menu, MenuDivider, MenuItem } from '@contentful/f36-components';
 import tokens from '@contentful/f36-tokens';
 import { useSDK } from '@contentful/react-apps-toolkit';
 import { useSortable } from '@dnd-kit/sortable';
@@ -7,11 +7,11 @@ import { CSS } from '@dnd-kit/utilities';
 import { css } from '@emotion/react';
 import { Cloudinary as cloudinaryCore } from 'cloudinary-core';
 import fileSize from 'file-size';
-import { useCallback, useMemo } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import logo from '../../assets/logo.svg';
 import { VALID_IMAGE_FORMATS } from '../../constants';
 import { AppInstallationParameters, CloudinaryAsset, MediaLibraryResult } from '../../types';
-import { extractAsset, mediaLibraryFilter } from '../../utils';
+import { extractAsset, mediaLibraryFilter, transformationTemplateBinding } from '../../utils';
 
 const styles = {
   dragHandle: css({
@@ -58,6 +58,9 @@ interface Props {
 }
 
 export function Thumbnail({ asset, isDisabled, onDelete, onReplace }: Props) {
+  const [transformationBinding, setTransformationBinding] = useState<CloudinaryAsset | undefined>(undefined);
+  const [cancelListeners, setCancelListeners] = useState<(() => void)[]>([]);
+  const [boundUrl, setBoundUrl] = useState<string | undefined>(undefined);
   const sdk = useSDK<FieldAppSDK<AppInstallationParameters>>();
 
   const alt = [asset.public_id, ...(asset.tags ?? [])].join(', ');
@@ -130,6 +133,53 @@ export function Thumbnail({ asset, isDisabled, onDelete, onReplace }: Props) {
     window.open(url, '_blank');
   }, [asset.secure_url]);
 
+  // rough implementation, for POC. should be revised if accepted.
+  const onTransformBinding = useCallback(() => {
+    setTransformationBinding(asset);
+    const template = sdk.parameters.instance.transformationBinding;
+
+    const updatedAsset = transformationTemplateBinding(template, asset, sdk);
+    const cloudinary = new cloudinaryCore({
+      cloud_name: sdk.parameters.installation.cloudName,
+      api_key: sdk.parameters.installation.apiKey,
+    });
+
+    updateUrl(updatedAsset);
+
+    function updateUrl(asset: CloudinaryAsset) {
+      const transformations = updatedAsset.bound_transformation;
+
+      // Create base options object
+      const baseOptions = {
+        type: asset.type,
+        rawTransformation: transformations,
+      };
+
+      const options = {
+        ...baseOptions,
+        version: String(asset.version || 1),
+      };
+
+      const url = cloudinary.url(asset.public_id, options);
+      setBoundUrl(url);
+    }
+
+    const cancelListeners = Object.entries(sdk.entry.fields).map(([name, field]) => {
+      return field.onValueChanged((value) => {
+        console.log(name, value);
+        const updatedAsset = transformationTemplateBinding(template, asset, sdk);
+        updateUrl(updatedAsset);
+      });
+    });
+    setCancelListeners(cancelListeners);
+  }, [asset]);
+
+  useEffect(() => {
+    if (transformationBinding) {
+      console.log(sdk.entry.fields);
+    }
+  }, [transformationBinding, sdk.entry.fields]);
+
   const consoleUrl = `https://console.cloudinary.com/console/media_library/query_search?q=${encodeURIComponent(
     `{"userExpression":"(public_id = \\"${asset.public_id}\\")"}`,
   )}`;
@@ -165,7 +215,24 @@ export function Thumbnail({ asset, isDisabled, onDelete, onReplace }: Props) {
 
     return `${pad(minutes)}:${pad(seconds)}`;
   }, []);
+  if (transformationBinding) {
+    return (
+      <div>
+        <div>Live Preview</div>
+        <img src={boundUrl} alt={transformationBinding.public_id} />
+        <div>{transformationBinding.bound_transformation}</div>
 
+        <Button
+          onClick={() => {
+            setTransformationBinding(undefined);
+            cancelListeners.forEach((cancelListener) => cancelListener());
+            setCancelListeners([]);
+          }}>
+          Close
+        </Button>
+      </div>
+    );
+  }
   return (
     <div ref={setNodeRef}>
       <AssetCard
@@ -195,6 +262,9 @@ export function Thumbnail({ asset, isDisabled, onDelete, onReplace }: Props) {
 
           <MenuItem key="preview" onClick={onPreview} isDisabled={isDisabled}>
             Preview
+          </MenuItem>,
+          <MenuItem key="preview" onClick={onTransformBinding} isDisabled={isDisabled}>
+            Transformation Binding
           </MenuItem>,
 
           <MenuDivider key="divider2" />,
@@ -256,14 +326,10 @@ function getUrlFromAsset(installationParams: AppInstallationParameters, asset: C
     rawTransformation: transformations,
   };
 
-  // Only include version if it's defined and not null/undefined
-  const options =
-    asset.version != null
-      ? {
-          ...baseOptions,
-          version: String(asset.version),
-        }
-      : baseOptions;
+  const options = {
+    ...baseOptions,
+    version: String(asset.version || 1),
+  };
 
   if (asset.resource_type === 'image' && VALID_IMAGE_FORMATS.includes(asset.format)) {
     return cloudinary.url(asset.public_id, options);

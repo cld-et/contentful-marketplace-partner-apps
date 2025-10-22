@@ -37,6 +37,7 @@ export type CloudinaryAsset = {
   original_raw_transformation?: string;
   original_transformed_url?: string;
   raw_transformation?: string;
+  bound_transformation?: string;
 };
 
 /**
