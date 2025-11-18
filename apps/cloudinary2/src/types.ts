@@ -8,6 +8,9 @@ export interface AppInstallationParameters {
   format: string;
   showUploadButton: string;
   imageEditorOverlays: string[];
+  assetAuditTrailEnabled: string;
+  assetAuditTag: string;
+  assetAuditContext: string;
 }
 
 export interface BackendParameters {
@@ -31,7 +34,7 @@ export type CloudinaryAsset = {
   public_id: string;
   created_at: string;
   secure_url: string;
-  resource_type: string;
+  resource_type: 'image' | 'video' | 'raw';
   original_url?: string;
   original_secure_url?: string;
   original_raw_transformation?: string;
@@ -50,6 +53,7 @@ export interface MediaLibraryResult {
 export type ResourceTypeFilter = 'image' | 'video' | 'all';
 
 export interface MediaLibraryResultAsset {
+  id: string;
   public_id: string;
   resource_type: string;
   type: string;

@@ -1,12 +1,13 @@
 import { Checkbox, Form, TextLink } from '@contentful/f36-components';
-import { ExternalLinkTrimmedIcon } from '@contentful/f36-icons';
+
+import { ArrowSquareOutIcon } from '@contentful/f36-icons';
 import { useCallback } from 'react';
+import { FieldWrapper } from '../../components/FieldWrapper';
 import { SelectField } from '../../components/SelectField';
 import { TextField } from '../../components/TextField';
 import { DEFAULT_APP_INSTALLATION_PARAMETERS } from '../../constants';
 import { AppInstallationParameters } from '../../types';
 import { BackendConfiguration } from './BackendConfiguration';
-import { FieldWrapper } from '../../components/FieldWrapper';
 
 const MAX_FILES_UPPER_LIMIT = 1000;
 
@@ -50,7 +51,7 @@ export function InstallParamsConfiguration(props: Props) {
               href="https://console.cloudinary.com/settings/api-keys"
               target="_blank"
               rel="noreferrer noopener"
-              icon={<ExternalLinkTrimmedIcon />}
+              icon={<ArrowSquareOutIcon />}
               alignIcon="end">
               Access keys
             </TextLink>
@@ -166,6 +167,58 @@ export function InstallParamsConfiguration(props: Props) {
         isRequired
         type="text"
       />
+      <div style={{ border: '1px solid #ccc', padding: '10px', borderRadius: '5px' }}>
+        <h3 style={{ marginTop: 0, marginBottom: '10px' }}>Asset Audit Trail</h3>
+
+        <FieldWrapper description="Enable or disable the Asset Audit Trail functionality. When checked, on adding or removing assets in Contentful, Cloudinary Asset will be updated with the corresponding metadata">
+          <Checkbox
+            isChecked={parameters.assetAuditTrailEnabled === 'true'}
+            value={'assetAuditTrailEnabled'}
+            onChange={(event) => {
+              onParameterChange('assetAuditTrailEnabled', event.currentTarget.checked ? 'true' : 'false');
+              if (!parameters.assetAuditTag) {
+                onParameterChange('assetAuditTag', DEFAULT_APP_INSTALLATION_PARAMETERS.assetAuditTag);
+              }
+            }}>
+            Enable
+          </Checkbox>
+        </FieldWrapper>
+        <h4>Tag format</h4>
+        <TextField
+          isDisabled={parameters.assetAuditTrailEnabled !== 'true'}
+          testId="config-assetLinkTag"
+          name=""
+          description="Cloudinary Tag is evaluated in the context of the current Contentful entry, using JS template literals, e.g. contentful/id-${entry.id}"
+          value={parameters.assetAuditTag}
+          onChange={(value) => {
+            if (!value) {
+              value = DEFAULT_APP_INSTALLATION_PARAMETERS.assetAuditTag;
+            }
+            onParameterChange('assetAuditTag', value);
+          }}
+          isRequired={parameters.assetAuditTrailEnabled === 'true'}
+          type="text"
+        />
+        <h4>Context format (Audit Trail)</h4>
+        <TextField
+          isDisabled={parameters.assetAuditTrailEnabled !== 'true'}
+          testId="config-assetAuditContext"
+          name=""
+          description="Cloudinary Tag is evaluated in the context of the current Contentful entry, using JS template literals, e.g. contentful/id-${entry.id}"
+          value={parameters.assetAuditContext}
+          onChange={(value) => {
+            if (!value) {
+              value = DEFAULT_APP_INSTALLATION_PARAMETERS.assetAuditContext;
+            }
+            onParameterChange('assetAuditContext', value);
+          }}
+          isRequired={parameters.assetAuditTrailEnabled === 'true'}
+          type="text"
+        />
+        {parameters.assetAuditTrailEnabled === 'true' && (
+          <label>⚠️ Enabling this feature will requires users to complete additional OAuth authentication with Cloudinary.</label>
+        )}
+      </div>
     </Form>
   );
 }

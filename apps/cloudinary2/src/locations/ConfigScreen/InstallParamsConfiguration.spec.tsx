@@ -15,6 +15,9 @@ const installationParameters: AppInstallationParameters = {
   startFolder: 'start folder',
   showUploadButton: 'true',
   imageEditorOverlays: [],
+  assetAuditTrailEnabled: 'false',
+  assetAuditTag: '',
+  assetAuditContext: '',
 };
 
 const backendParameters: BackendParameters = {

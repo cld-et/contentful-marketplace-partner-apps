@@ -14,9 +14,10 @@ interface Props {
 
   inputProps?: Pick<TextInputProps, 'max' | 'min'>;
   testId: string;
+  isDisabled?: boolean;
 }
 
-export function TextField({ name, description, value, onChange, isRequired = false, type, inputProps, testId }: Props) {
+export function TextField({ name, description, value, onChange, isRequired = false, type, inputProps, testId, isDisabled = false }: Props) {
   return (
     <FieldWrapper name={name} description={description} counter>
       <TextInput
@@ -28,6 +29,7 @@ export function TextField({ name, description, value, onChange, isRequired = fal
         value={value}
         onChange={(e) => onChange(e.target.value)}
         testId={testId}
+        isDisabled={isDisabled}
         {...inputProps}
       />
     </FieldWrapper>

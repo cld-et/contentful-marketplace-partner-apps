@@ -123,6 +123,9 @@ const ConfigScreen = () => {
         format: currentParameters?.format ?? DEFAULT_APP_INSTALLATION_PARAMETERS.format,
         showUploadButton: currentParameters?.showUploadButton ?? DEFAULT_APP_INSTALLATION_PARAMETERS.showUploadButton,
         imageEditorOverlays: currentParameters?.imageEditorOverlays ?? DEFAULT_APP_INSTALLATION_PARAMETERS.imageEditorOverlays,
+        assetAuditTrailEnabled: currentParameters?.assetAuditTrailEnabled ?? DEFAULT_APP_INSTALLATION_PARAMETERS.assetAuditTrailEnabled,
+        assetAuditTag: currentParameters?.assetAuditTag ?? DEFAULT_APP_INSTALLATION_PARAMETERS.assetAuditTag,
+        assetAuditContext: currentParameters?.assetAuditContext ?? DEFAULT_APP_INSTALLATION_PARAMETERS.assetAuditContext,
       });
       setSelectedFields(editorInterfacesToSelectedFields(editorInterfacesResponse.items, sdk.ids.app));
 

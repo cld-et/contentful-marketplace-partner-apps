@@ -1,8 +1,12 @@
+import { FieldAppSDK } from '@contentful/app-sdk';
+import { useSDK } from '@contentful/react-apps-toolkit';
 import { DndContext, DragEndEvent } from '@dnd-kit/core';
 import { SortableContext, arrayMove } from '@dnd-kit/sortable';
 import { css } from '@emotion/react';
 import { useCallback, useMemo, useRef } from 'react';
-import { CloudinaryAsset } from '../../types';
+import { AuditTrail } from '../../lib/cloudinary/AuditTrailApi';
+import { cldAuthenticationService } from '../../lib/cloudinary/CldAuthentication';
+import { AppInstallationParameters, CloudinaryAsset } from '../../types';
 import { Thumbnail } from './Thumbnail';
 
 const styles = {
@@ -20,6 +24,7 @@ interface Props {
 }
 
 export function Thumbnails({ assets, isDisabled, onChange }: Props) {
+  const sdk = useSDK<FieldAppSDK<AppInstallationParameters>>();
   const assetsIdMap = useRef(new WeakMap<CloudinaryAsset, string>());
   // each asset needs an id. We cannot use a property because we might have duplicate assets.
   // `assetsIdsMap` stores an id for each asset object
@@ -37,6 +42,8 @@ export function Thumbnails({ assets, isDisabled, onChange }: Props) {
 
   const handleDelete = useCallback(
     (indexToDelete: number) => {
+      const deletedAsset = assets[indexToDelete];
+      tag(deletedAsset, 'remove');
       onChange(assets.filter((_, assetIndex) => assetIndex !== indexToDelete));
     },
     [assets, onChange],
@@ -44,10 +51,37 @@ export function Thumbnails({ assets, isDisabled, onChange }: Props) {
 
   const handleReplace = useCallback(
     (oldAsset: CloudinaryAsset, newAsset: CloudinaryAsset) => {
+      tag(oldAsset, 'remove');
+      tag(newAsset, 'add');
       onChange(assets.map((asset) => (asset.public_id === oldAsset.public_id ? newAsset : asset)));
     },
     [assets, onChange],
   );
+
+  async function tag(asset: CloudinaryAsset, action: 'add' | 'remove') {
+    if (sdk.parameters.installation.assetAuditTrailEnabled === 'true') {
+      let accessToken = await cldAuthenticationService.getStoredToken();
+      if (!accessToken) {
+        await cldAuthenticationService.login();
+        accessToken = await cldAuthenticationService.getStoredToken();
+      }
+      if (!accessToken) {
+        sdk.notifier.error('skipping audit trail because user is not authenticated');
+        return;
+      }
+      if (accessToken) {
+        const auditTrailApi = new AuditTrail({
+          sdk,
+          accessToken,
+        });
+
+        auditTrailApi.manage({
+          asset,
+          action,
+        });
+      }
+    }
+  }
 
   const handleDragEnd = useCallback(
     (event: DragEndEvent) => {

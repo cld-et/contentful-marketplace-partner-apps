@@ -57,12 +57,18 @@ export function extractAsset(asset: MediaLibraryResultAsset): CloudinaryAsset {
   return res;
 }
 
-function evaluator(template: string, context: Record<string, unknown>, sdk: FieldAppSDK) {
+export interface CldErrorEvent extends CustomEvent<{ message: string }> {
+  detail: {
+    message: string;
+  };
+}
+
+export function evaluator(template: string, context: Record<string, unknown>) {
   try {
     return new Function(...Object.keys(context), 'return `' + template + '`;')(...Object.values(context));
   } catch (error) {
     // show error notification to the user
-    sdk.notifier.error(`Invalid field configuration ${template}\n${error}`);
+    window.dispatchEvent(new CustomEvent('cld-error', { detail: { message: `Invalid field configuration ${template}\n${error}` } }));
     console.error(error);
     return template;
   }
@@ -76,13 +82,13 @@ export function mediaLibraryFilter(type: string, sdk: FieldAppSDK<AppInstallatio
   let expression = type !== '' ? `resource_type:${type}` : ``;
   const searchFilterTemplate = (sdk.parameters.instance.searchFilter || '') as string;
 
-  const binding = {
+  const context = {
     entry: sdk.entry,
   };
 
   const shouldAppendImplicitAndOperator = searchFilterTemplate.match(/^\s*(AND|OR).*$/) || !searchFilterTemplate;
   const defaultBooleanOperator = shouldAppendImplicitAndOperator ? '' : ' AND ';
-  const searchFilter = ` ${evaluator(searchFilterTemplate, binding, sdk)}`;
+  const searchFilter = ` ${evaluator(searchFilterTemplate, context)}`;
   expression = `${expression}${defaultBooleanOperator}${searchFilter}`;
   if (expression.trim() === '') {
     return undefined;

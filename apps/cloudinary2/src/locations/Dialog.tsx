@@ -7,6 +7,8 @@ import { AssetId } from './types';
 import VideoEditorDialog from './VideoEditorDialog';
 
 const Dialog = () => {
+  
+ 
   const sdk = useSDK<DialogAppSDK<AppInstallationParameters>>();
   const invocationParams = sdk.parameters.invocation as Record<string, unknown>;
 
