@@ -1,5 +1,34 @@
 # Changelog
 
+## [1.0.19](https://github.com/cld-et/contentful-marketplace-partner-apps/compare/vwo-fme-v1.0.18...vwo-fme-v1.0.19) (2026-11-17)
+
+
+### Bug Fixes
+
+* **deps:** bump @babel/plugin-transform-modules-systemjs from 7.27.1 to 7.29.4 in /apps/vwo-fme ([#8190](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8190)) ([b4fa3b3](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/b4fa3b37ec0e321a220550a6cfdd1c609b302a98))
+* **deps:** bump @contentful/app-sdk from 4.51.4 to 4.58.0 in /apps/vwo-fme in the production-dependencies group across 1 directory ([#8429](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8429)) ([d2bc022](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/d2bc022e924675771cc0fb5d85f64a57b805cf85))
+* **deps:** bump @contentful/f36-tokens from 4.2.0 to 6.1.2 in /apps/vwo-fme ([#8066](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8066)) ([574deed](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/574deed4465a011439a651ab30216a752243802e))
+* **deps:** bump @contentful/f36-tokens from 6.1.2 to 6.1.3 in /apps/vwo-fme in the production-dependencies group ([#8530](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8530)) ([c585ca5](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/c585ca5da992b55541fef63a269f17a21630467c))
+* **deps:** bump brace-expansion from 1.1.12 to 1.1.13 in /apps/vwo-fme ([#8041](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8041)) ([33f44d4](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/33f44d43f1a1cc756c9b8e1edfeb84d27b4d6e8a))
+* **deps:** bump fast-uri from 3.0.6 to 3.1.2 in /apps/vwo-fme ([#8184](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8184)) ([0c3749b](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/0c3749bded8db1f859391eef7f404f7b3b330234))
+* **deps:** bump flatted from 3.3.3 to 3.4.1 in /apps/vwo-fme ([#7948](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7948)) ([9a5a5b5](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/9a5a5b55dd11c44b3ecd4a7ec37b2c610913bf71))
+* **deps:** bump flatted from 3.4.1 to 3.4.2 in /apps/vwo-fme ([#7974](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7974)) ([123ff78](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/123ff78b8ccec8c6ebf5a23200611d7a41947761))
+* **deps:** bump follow-redirects from 1.15.11 to 1.16.0 in /apps/vwo-fme ([#8152](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8152)) ([98f2548](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/98f254884761182158f78055a42cffc202efa256))
+* **deps:** bump lodash from 4.17.23 to 4.18.1 in /apps/vwo-fme ([#8075](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8075)) ([5a58f9b](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/5a58f9b3b4468998ece17979ae5fb714ee2ffca1))
+* **deps:** bump node-forge from 1.3.1 to 1.4.0 in /apps/vwo-fme ([#8021](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8021)) ([82bc553](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/82bc5536f3d32a777b4dec85c9368e91adb9d091))
+* **deps:** bump path-to-regexp from 0.1.12 to 0.1.13 in /apps/vwo-fme ([#8058](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8058)) ([0eb56f2](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/0eb56f2d5a3ff1d4a8ad538e582874ada33203e7))
+* **deps:** bump qs and express in /apps/vwo-fme ([#8218](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8218)) ([fb57428](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/fb574288a87c44e1add6b8f47156af14e13ce87c))
+* **deps:** bump shell-quote from 1.8.3 to 1.8.4 in /apps/vwo-fme ([#8311](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8311)) ([2fcd307](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/2fcd307200c8781030736724cc871f12af9990d5))
+* **deps:** bump tar and @contentful/app-scripts in /apps/vwo-fme ([#8360](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8360)) ([ce25f6b](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/ce25f6ba5c9ed50ca8dbcfee594f9e3e314db109))
+* **deps:** bump yaml in /apps/vwo-fme ([#7994](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7994)) ([66a8dbf](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/66a8dbf2ef0459d0af3c17d3c7d69b1fe06a86a7))
+* Optimize entries fetch for variation entry cards [] ([#8200](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8200)) ([e02305c](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/e02305cc9aefb46b125fd9c49afba1679822616c))
+* **vwo-fme:** bump @contentful/app-sdk to 4.61.1 [AIS-59] ([#8452](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8452)) ([8dc2e18](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/8dc2e18379babe42068b68c9fecf38ae70d93c73))
+* **vwo-fme:** exclude .cjs from CRA file-loader via craco [AIS-59] ([#8455](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8455)) ([28cab5c](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/28cab5c308c0b4c585039a5f65f34e53ed0f6a4a))
+* **vwo-fme:** handle missing control variation when linking default entry [] ([#8758](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8758)) ([0581153](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/058115345d27ab86b8e8a722e807dd7ecf8b4c65))
+* **vwo-fme:** resolve entries BadRequest and app action NotFound in production [] ([#8306](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8306)) ([afa4a15](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/afa4a156f341956f83094c34e2caaedd455264ad))
+* **vwo-fme:** surface content-type-limit error on install [AIS-89] ([#8646](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8646)) ([c27cead](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/c27cead77e5ff0c7a76b110bd8fbf2b8fe790292))
+* **vwo-fme:** use sdk.cma instead of manual createClient [AIS-59] ([#8449](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8449)) ([693519c](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/693519c353710315e83fc4fc8b4525abc32e748f))
+
 ## [1.0.18](https://github.com/contentful/marketplace-partner-apps/compare/vwo-fme-v1.0.17...vwo-fme-v1.0.18) (2026-09-02)
 
 
