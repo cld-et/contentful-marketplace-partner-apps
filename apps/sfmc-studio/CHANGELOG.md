@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.2.9](https://github.com/cld-et/contentful-marketplace-partner-apps/compare/sfmc-studio-v1.2.8...sfmc-studio-v1.2.9) (2026-11-17)
+
+
+### Bug Fixes
+
+* bump jspdf to 4.2.1 in sfmc-studio to clear CVE-2025-68428 [EXT-7499] ([#8445](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8445)) ([e4151e6](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/e4151e676b0e367eea7d1edab3f7dd761ae4ebae))
+* **deps:** bump brace-expansion in /apps/sfmc-studio ([#8042](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8042)) ([bc4f664](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/bc4f6640de176f90cc4a2cbdc987479192154b8e))
+* **deps:** bump dompurify from 3.2.6 to 3.4.10 in /apps/sfmc-studio ([#8378](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8378)) ([fc26525](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/fc265250370f41100cef45538850b782bb62b413))
+* **deps:** bump dompurify from 3.4.10 to 3.4.11 in /apps/sfmc-studio ([#8422](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8422)) ([ce3b70e](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/ce3b70e21345ce46bfcc745a63f8f076b66bf0d6))
+* **deps:** bump esbuild and @contentful/app-scripts in /apps/sfmc-studio ([#8333](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8333)) ([feaa761](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/feaa7612f4351d6bb32393954c534d01b9475f03))
+* **deps:** bump flatted from 3.3.3 to 3.4.1 in /apps/sfmc-studio ([#7946](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7946)) ([cfd3575](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/cfd35755b138d6b5d27e92efbb449a051ffd6ca2))
+* **deps:** bump flatted from 3.4.1 to 3.4.2 in /apps/sfmc-studio ([#7975](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7975)) ([153ff52](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/153ff52926d9a9ff7f42a520bdeb29e7695acc7a))
+* **deps:** bump immutable from 5.1.3 to 5.1.5 in /apps/sfmc-studio ([#7926](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7926)) ([02c74fd](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/02c74fd8048c12a27e0c1965eb271fe677445f08))
+* **deps:** bump next from 15.5.10 to 15.5.14 in /apps/sfmc-studio ([#7977](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7977)) ([a48b93c](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/a48b93c00d97afbb9132619dab929b24f0f65713))
+* **deps:** bump next from 15.5.14 to 15.5.18 in /apps/sfmc-studio ([#8195](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8195)) ([769774d](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/769774ddb4db13002789e48e433560a9434a9423))
+* **deps:** bump picomatch in /apps/sfmc-studio ([#7985](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7985)) ([e77af20](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/e77af20e32c92f99f08fef78c2a00263c044788d))
+* **deps:** bump the production-dependencies group in /apps/sfmc-studio with 10 updates ([#8574](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8574)) ([af1203c](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/af1203cdf97d7bcc8c2d89a9f9923b6d0ae1a109))
+* **deps:** bump yaml from 1.10.2 to 1.10.3 in /apps/sfmc-studio ([#8007](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8007)) ([c343431](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/c3434314e2fafebd3d73bad478e9211ac74036fc))
+* **deps:** update dependency antd to ^5.29.3 ([#8797](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8797)) ([e78bc1a](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/e78bc1a7c4c2130c0245834381debe2b693ace5d))
+
 ## [1.2.8](https://github.com/contentful/marketplace-partner-apps/compare/sfmc-studio-v1.2.7...sfmc-studio-v1.2.8) (2026-06-30)
 
 
