@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.3.0](https://github.com/cld-et/contentful-marketplace-partner-apps/compare/ceros-contentful-app-v1.2.0...ceros-contentful-app-v1.3.0) (2026-11-17)
+
+
+### Features
+
+* add ability to browse Ceros folders and in order to pick an experience to embed [] ([#8757](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8757)) ([a112586](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/a11258653a2c4e4851fd5fc916fc42aea1160d03))
+* Add support for Ceros Flex URL's and embeds [INTEG-3957] ([#8198](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8198)) ([5a21a6a](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/5a21a6a8ff353bb4e4b8ba7eda1221eccd57df54))
+
+
+### Bug Fixes
+
+* **ceros:** resolve App Action via space/environment, not install org [AIS-501] ([#8762](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8762)) ([e02d08b](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/e02d08b7c31725198d39883a621df6cb75147973))
+* **deps:** bump @contentful/app-sdk from 4.55.1 to 4.58.2 in /apps/ceros in the production-dependencies group ([#8457](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8457)) ([a425287](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/a425287b0a7b6dc261f12db7d9f395c373bfa2b4))
+* **deps:** bump axios from 1.15.2 to 1.16.1 in /apps/ceros ([#8255](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8255)) ([dbccccd](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/dbccccd6c32407536e9b2dfcc49903da243eccc7))
+* **deps:** bump esbuild, @contentful/app-scripts, @vitejs/plugin-react, vite and vitest in /apps/ceros ([#8319](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8319)) ([ed1521f](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/ed1521f2c5dd8297a105713443b8bbb1c86ccba8))
+* **deps:** bump picomatch in /apps/ceros ([#7984](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7984)) ([e0f102f](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/e0f102f31d1216bd4c86b0fc81b862f7c448f921))
+* **deps:** bump qs from 6.15.1 to 6.15.2 in /apps/ceros ([#8245](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8245)) ([f852af2](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/f852af2f9234c35a8ae29addc7a666e199b8c5b4))
+* **deps:** update dependency @extractus/oembed-extractor to ^4.1.0 ([#8792](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8792)) ([f2f64e5](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/f2f64e51537eadf883e1aca7c6389d5fbd5d313c))
+* **security:** sanitize error disclosure in translationstudio and ceros [ACT-3449] ([#8653](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8653)) ([e6f0816](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/e6f081647792574e57459d6bc3cca4cf062ee2b0))
+
 ## [1.2.0](https://github.com/contentful/marketplace-partner-apps/compare/ceros-contentful-app-v1.1.1...ceros-contentful-app-v1.2.0) (2026-09-02)
 
 
