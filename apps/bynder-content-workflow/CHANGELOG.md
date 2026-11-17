@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.0.16](https://github.com/cld-et/contentful-marketplace-partner-apps/compare/bynder-content-workflow-v1.0.15...bynder-content-workflow-v1.0.16) (2026-11-17)
+
+
+### Bug Fixes
+
+* **content-workflow:** Update vulnerable app dependencies [GC-8169] ([#8686](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8686)) ([e413d4c](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/e413d4c9bf133ba18ce3576c3f9fb683f03b5494))
+* **deps:** bump @contentful/react-apps-toolkit from 1.2.16 to 2.0.1 in /apps/bynder-content-workflow ([#8518](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8518)) ([2f62a8d](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/2f62a8d757315e4d406389877f7a8ad7744d955a))
+* **deps:** bump esbuild, @vitejs/plugin-react, vite and vitest in /apps/bynder-content-workflow ([#8322](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8322)) ([7cfccde](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/7cfccdec494314ebe13c8dec8d03bc880b3865ee))
+* **deps:** bump qs from 6.14.2 to 6.15.2 in /apps/bynder-content-workflow ([#8225](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8225)) ([f5af2e0](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/f5af2e0009c39b2c5c0449fdd468f70f19669256))
+* **deps:** bump the production-dependencies group in /apps/bynder-content-workflow with 2 updates ([#8477](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8477)) ([2a0bbe6](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/2a0bbe660905c7592e94417f6187e8da1d4c8cb6))
+* **deps:** bump tmp and @contentful/app-scripts in /apps/bynder-content-workflow ([#8251](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8251)) ([faa88bd](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/faa88bd05de0065bed900e640eddf3938a2269f4))
+* **deps:** bump uuid from 9.0.1 to 14.0.0 ([#8211](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8211)) ([83aa77d](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/83aa77d0ab2a8416678472fcfb5a741f7138717a))
+* **deps:** bump uuid from 9.0.1 to 14.0.0 in /apps/bynder-content-workflow ([#8158](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8158)) ([5f13852](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/5f13852b1744fca84e2c9b5739b94d6655345e05))
+* **deps:** update dependency @contentful/rich-text-html-renderer to ^16.6.10 ([#8791](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8791)) ([4871aac](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/4871aac6e2aaabdd40564943c0e1c239a7d9fe37))
+* Fail to map Component -&gt; Reference field [GC-7555] ([#8162](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8162)) ([bddb6d8](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/bddb6d895948886900b2993b8a22bcf984def62d))
+* Prevent template 404s from crashing the template mappings listing [GC-7554] ([#7920](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7920)) ([a37a26f](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/a37a26fbb180700098f6b5f03351b58cbc36d7bb))
+* update axios to 1.20.0 and bump app version to 1.0.11 [] ([#8784](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8784)) ([ab1e753](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/ab1e753f6582376b69c7b6c0cb71dad1961fb430))
+
 ## [1.0.15](https://github.com/contentful/marketplace-partner-apps/compare/bynder-content-workflow-v1.0.14...bynder-content-workflow-v1.0.15) (2026-06-18)
 
 
