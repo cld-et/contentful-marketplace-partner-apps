@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.8.0](https://github.com/cld-et/contentful-marketplace-partner-apps/compare/bynder-assets-v1.7.3...bynder-assets-v1.8.0) (2026-11-17)
+
+
+### Features
+
+* add streaming link support for Bynder video assets [] ([#7934](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7934)) ([e4ddbb6](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/e4ddbb635b0596c8189d1fcfe0f47b8f2a831c5c))
+* bynder streaming link support [ZEND-7539] ([#7937](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7937)) ([53f7e48](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/53f7e482864ce688be29b68b1825ffd36151d9b4))
+* field storage updates [] ([#7936](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7936)) ([f927aa9](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/f927aa981ce731efe43bb55d8a52f8b0aa533386))
+
+
+### Bug Fixes
+
+* **bynder:** Compact View resizing [FSB-11085] ([#8177](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8177)) ([2c959ae](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/2c959ae3e5120df23baf0dc87900b57b919f4b0c))
+* **deps:** bump handlebars from 4.7.8 to 4.7.9 in /apps/bynder ([#8048](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8048)) ([095e6fb](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/095e6fb8989d62a8c8b12a1f3b407921c61dc69e))
+* **deps:** bump tar and @contentful/app-scripts in /apps/bynder ([#8351](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8351)) ([70cfcb3](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/70cfcb3ae1cb7da8d4c7eadccdb381a5c2202e77))
+* **deps:** bump the production-dependencies group in /apps/bynder with 2 updates ([#8460](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8460)) ([7886943](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/78869430ab49c5c02cf4b78493d6d1d967a4639a))
+* **deps:** update dependency @contentful/f36-icons to ^4.29.1 ([#8746](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8746)) ([7ee8ec1](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/7ee8ec1437ac32631acabcdfc17b5e090300d7f8))
+* preserve existing thumbnails and original on refresh [ZEND-7539] ([#7927](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7927)) ([537cd78](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/537cd789a03fb9005b17c1875615342ff63fea3e))
+* ucv url adjustment [] ([#7940](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7940)) ([9f00404](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/9f00404c38c132814d9c4f775294b0e716653a5c))
+
 ## [1.7.3](https://github.com/contentful/marketplace-partner-apps/compare/bynder-assets-v1.7.2...bynder-assets-v1.7.3) (2026-06-22)
 
 
