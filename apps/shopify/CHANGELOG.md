@@ -1,5 +1,27 @@
 # Changelog
 
+## [2.4.0](https://github.com/cld-et/contentful-marketplace-partner-apps/compare/shopify-sku-v2.3.1...shopify-sku-v2.4.0) (2026-11-17)
+
+
+### Features
+
+* allow configuring Shopify Storefront API version [] ([#8156](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8156)) ([b8a8b68](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/b8a8b68d97898f452b05045335efb777bab5743c))
+
+
+### Bug Fixes
+
+* add Storefront API 2024-10 Product fields [ZEND-7709] ([#7954](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7954)) ([aa28a4d](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/aa28a4d83c65c337dbda25f76fd397690e432472))
+* **deps:** bump @babel/plugin-transform-modules-systemjs from 7.28.5 to 7.29.4 in /apps/shopify ([#8193](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8193)) ([2577b34](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/2577b34ad7c2ed64d42c85d753705af626b218a1))
+* **deps:** bump brace-expansion in /apps/shopify ([#8046](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8046)) ([a3fbadf](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/a3fbadfbc18c1616ac2ed72627e7bdf30db62a12))
+* **deps:** bump flatted from 3.3.3 to 3.4.1 in /apps/shopify ([#7944](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7944)) ([45a0fa2](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/45a0fa2fac73500789a945b437d124da2f43e554))
+* **deps:** bump flatted from 3.4.1 to 3.4.2 in /apps/shopify ([#7970](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7970)) ([2bcb137](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/2bcb137022b32dcb2be4e783bedc46b80c732aa2))
+* **deps:** bump picomatch in /apps/shopify ([#8003](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8003)) ([94b8d3e](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/94b8d3e6fabaf4445c50f29fcba914df030d39e2))
+* **deps:** bump shell-quote and concurrently in /apps/shopify ([#8308](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8308)) ([989138b](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/989138b243f8aed594ec65f100af2da13ba44850))
+* **deps:** bump tar and @contentful/app-scripts in /apps/shopify ([#8349](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8349)) ([9e6ae0d](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/9e6ae0df1e84d249abe1e8c6ad03e3e40f6d863e))
+* **deps:** bump the production-dependencies group in /apps/shopify with 2 updates ([#8458](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8458)) ([4727e99](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/4727e99ddbc03ab9373e042f4252258eb27c8eb1))
+* **deps:** bump yaml from 1.10.2 to 1.10.3 in /apps/shopify ([#8006](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8006)) ([99505f7](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/99505f792609cbd8d5b5d85b34817c3db6f655ee))
+* **deps:** update dependency @contentful/ecommerce-app-base to ^4.1.9 ([#8744](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8744)) ([d275fe0](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/d275fe0a6270d4f92a37dc307f36c2f3cab9c1ad))
+
 ## [2.3.1](https://github.com/contentful/marketplace-partner-apps/compare/shopify-sku-v2.3.0...shopify-sku-v2.3.1) (2026-06-22)
 
 
