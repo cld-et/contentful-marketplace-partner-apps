@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.5](https://github.com/cld-et/contentful-marketplace-partner-apps/compare/abtasty-v1.1.4...abtasty-v1.1.5) (2026-11-17)
+
+
+### Bug Fixes
+
+* **abtasty:** verify postMessage origin before accepting OAuth token[AIS-302] ([#8684](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8684)) ([7036d45](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/7036d4577ba46fa03bb4b6c0d93f08ea213bf446))
+* **deps:** bump flatted from 3.3.3 to 3.4.1 in /apps/abtasty ([#7942](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7942)) ([93727a0](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/93727a04c5675ac504b20f4dbce735b8ef3e65fe))
+* **deps:** bump flatted from 3.4.1 to 3.4.2 in /apps/abtasty ([#7973](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7973)) ([263a0ee](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/263a0ee9e2f04a78f7ecd90de706c7de599c33b9))
+* **deps:** bump qs from 6.14.2 to 6.15.2 in /apps/abtasty ([#8231](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8231)) ([9388dea](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/9388dea3d42d2c28d1516b919b5241b1c7218d35))
+* **deps:** bump tar and @contentful/app-scripts in /apps/abtasty ([#8362](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8362)) ([c007e69](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/c007e69a4776b71db040f084128b53fb9756bd80))
+* **deps:** bump the production-dependencies group in /apps/abtasty with 3 updates ([#8597](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8597)) ([eccf939](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/eccf9394a08bdb1545a7132a8a8309f0ec484e98))
+* improve the account set up by enabling the multiple select [] ([#7750](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7750)) ([f99b6ff](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/f99b6ff0404ef7e7306419f6325d454f4c2b7db4))
+
 ## [1.1.4](https://github.com/contentful/marketplace-partner-apps/compare/abtasty-v1.1.3...abtasty-v1.1.4) (2026-07-27)
 
 
