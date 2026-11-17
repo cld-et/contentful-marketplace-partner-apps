@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.1.7](https://github.com/cld-et/contentful-marketplace-partner-apps/compare/hugging-face-v1.1.6...hugging-face-v1.1.7) (2026-11-17)
+
+
+### Bug Fixes
+
+* **deps:** bump @contentful/app-sdk from 4.45.0 to 4.58.2 in /apps/hugging-face in the production-dependencies group ([#8576](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8576)) ([f914b6a](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/f914b6ad7b85e268016641d7d5f576a021c139dd))
+* **deps:** bump flatted from 3.3.3 to 3.4.2 in /apps/hugging-face ([#7960](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7960)) ([e9b4dc8](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/e9b4dc87fa08508810fb60a7991ca686b21672b3))
+* **deps:** bump picomatch in /apps/hugging-face ([#7989](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7989)) ([bf5795a](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/bf5795a717d8c66c424524bf9ddf9531d1aac469))
+* **deps:** bump qs from 6.15.0 to 6.15.2 in /apps/hugging-face ([#8243](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8243)) ([54c01ff](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/54c01ff587787aea2866b208d38cb9e7abf8b1de))
+* **deps:** bump tar and @contentful/app-scripts in /apps/hugging-face ([#8369](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8369)) ([329aab1](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/329aab1027fe3fc9f290879a34fbaa5c1c5f0288))
+
 ## [1.1.6](https://github.com/contentful/marketplace-partner-apps/compare/hugging-face-v1.1.5...hugging-face-v1.1.6) (2026-09-02)
 
 
