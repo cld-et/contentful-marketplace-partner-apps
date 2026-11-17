@@ -1,5 +1,36 @@
 # Changelog
 
+## [1.6.0](https://github.com/cld-et/contentful-marketplace-partner-apps/compare/cloudinary-assets-v1.5.1...cloudinary-assets-v1.6.0) (2026-11-17)
+
+
+### Features
+
+* cloudinary show asset button only [] ([#7923](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7923)) ([013a523](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/013a52328d09a181d5af9c980ac90a46f7f39966))
+* **cloudinary:** add sidebar multi-field picker for batch asset assignment [ES-380] ([#8447](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8447)) ([c3ea9d4](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/c3ea9d4f0b3edd7857c2c6c02d071e87c3e8174f))
+
+
+### Bug Fixes
+
+* **cloudinary2:** preserve custom CNAME delivery for edited assets [] ([#8440](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8440)) ([cee42bf](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/cee42bf94942a0e92ff030fd0b8a512d8b069027))
+* **cloudinary2:** restore saved crop transformation on image editor reopen [ES-282] ([#8203](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8203)) ([fbab6f6](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/fbab6f60a79c172d07f9d6bb974952d31a426e6a))
+* **cloudinary2:** undefined in video thumbnail URLs [ES-229] ([#8181](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8181)) ([f2e6e45](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/f2e6e451888c92684d2f9c9226f473683a352cfd))
+* **cloudinary2:** use static poster for long video thumbnails [] ([#8399](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8399)) ([68bcb5c](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/68bcb5cc8e11f7b71beef6cbcd1d915866e6adb6))
+* **cloudinary:** keep widget open for multi-insert on multi-asset fields [] ([#8377](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8377)) ([982c52f](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/982c52fc6ae294b68410277f08487ffe0c84ce6b))
+* **deps:** bump @contentful/react-apps-toolkit from 1.2.16 to 1.2.23 in /apps/cloudinary2 ([#8537](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8537)) ([8b8447d](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/8b8447dbc5223bca4a403323c2c33ec955705f79))
+* **deps:** bump axios from 1.13.5 to 1.15.0 in /apps/cloudinary2 ([#8139](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8139)) ([4e15f3d](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/4e15f3dc01ce06bfe5a6fd7d44ab0ea52cd6e07d))
+* **deps:** bump axios from 1.13.5 to 1.15.0 in /apps/cloudinary2 ([#8139](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8139)) ([d8ac147](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/d8ac147f3caf075f7d2af29fe25184de9e102821))
+* **deps:** bump esbuild, @vitejs/plugin-react, vite and vitest in /apps/cloudinary2 ([#8334](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8334)) ([533f1d1](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/533f1d1ed0e24ec6c2c3259edca7164362e535ec))
+* **deps:** bump lodash from 4.17.23 to 4.18.1 in /apps/cloudinary2 ([#8115](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8115)) ([dcdc3ca](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/dcdc3ca7b5648de83a73ae9ef918cbe832c164ff))
+* **deps:** bump picomatch in /apps/cloudinary2 ([#7983](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7983)) ([56ce7c2](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/56ce7c214a181aa3d5099f850975eb26e6987828))
+* **deps:** bump qs from 6.14.2 to 6.15.2 in /apps/cloudinary2 ([#8241](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8241)) ([ac91d36](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/ac91d36c902c88f255a0ac1113a1493cfc4cd9c6))
+* **deps:** bump the production-dependencies group in /apps/cloudinary2 with 3 updates ([#8465](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8465)) ([4779ea6](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/4779ea6cced03a35bf6f3c093eeb0319004c6c63))
+* **deps:** bump tmp and @contentful/app-scripts in /apps/cloudinary2 ([#8249](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8249)) ([691281d](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/691281de24c36cd6be3d1cc0f9a598de5c8500e8))
+
+
+### Reverts
+
+* fix(cloudinary): keep widget open for multi-insert on multi-asset fields [] ([#8394](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8394)) ([ad1e2ac](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/ad1e2ace943d72ad31294c045c9090c41923a813))
+
 ## [1.5.1](https://github.com/contentful/marketplace-partner-apps/compare/cloudinary-assets-v1.5.0...cloudinary-assets-v1.5.1) (2026-10-21)
 
 
