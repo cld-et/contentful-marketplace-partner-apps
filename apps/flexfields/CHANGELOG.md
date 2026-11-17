@@ -1,5 +1,32 @@
 # Changelog
 
+## [1.7.0](https://github.com/cld-et/contentful-marketplace-partner-apps/compare/thrillworks-flex-fields-app-v1.6.4...thrillworks-flex-fields-app-v1.7.0) (2026-11-17)
+
+
+### Features
+
+* [flex field] Add Contentful App to Main Navigation ([#7921](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7921)) ([17de2c4](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/17de2c432727903090cb5acef21e5555a417ae01))
+* FlexFields - Add feature to export and import rules [] ([#8656](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8656)) ([cf54e79](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/cf54e79ca69ba4270648a9f9c285eebae385a5ce))
+* **flexfields:** add condition types, fix external references, Live Preview, and deploy failure [] ([#8313](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8313)) ([25cbf17](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/25cbf17d560a2b6d1c1f001e29dd6c2816bc6c3e))
+* **flexfields:** split bundle to stay well under 10 MB AppBundle API limit [] ([#8348](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8348)) ([51cdcbb](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/51cdcbb72a7aa82c4b6605090722c0cd73aa08e1))
+
+
+### Bug Fixes
+
+* **cloudinary:** keep widget open for multi-insert on multi-asset fields [] ([#8377](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8377)) ([982c52f](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/982c52fc6ae294b68410277f08487ffe0c84ce6b))
+* **deps:** bump @contentful/app-sdk from 4.45.0 to 4.58.2 in /apps/flexfields in the production-dependencies group ([#8463](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8463)) ([2133f82](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/2133f82099a2c7c8af2fddfc2d9a2d8010a04b3f))
+* **deps:** bump axios from 1.13.5 to 1.15.0 in /apps/flexfields ([#8141](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8141)) ([ee23b5c](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/ee23b5ce88e00be9a158f6cd5cf9ca901475cc3d))
+* **deps:** bump flatted from 3.3.3 to 3.4.2 in /apps/flexfields ([#7969](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7969)) ([e441387](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/e44138725e01a03e5beb959237fa9c95a3f5a8d1))
+* **deps:** bump qs from 6.14.2 to 6.15.2 in /apps/flexfields ([#8229](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8229)) ([efc821e](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/efc821e602f7fb016a14e0a87121e72cb0215f76))
+* **flexfields:** Condition for boolean fields [] ([#8446](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8446)) ([6f40408](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/6f404084f8741a067cfc9e1afdd9a6423dd067ab))
+* keep flexfields bundle under 10 MB AppBundle limit [] ([#8391](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8391)) ([66e1b44](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/66e1b448ba8349cb446f6ed8925e2a47fbb82a64))
+* show selected values in multiselect input [] ([#8061](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8061)) ([b0738f4](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/b0738f4220df657f31c307a562661ae8edfb310b))
+
+
+### Reverts
+
+* fix(cloudinary): keep widget open for multi-insert on multi-asset fields [] ([#8394](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8394)) ([ad1e2ac](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/ad1e2ace943d72ad31294c045c9090c41923a813))
+
 ## [1.6.4](https://github.com/contentful/marketplace-partner-apps/compare/thrillworks-flex-fields-app-v1.6.3...thrillworks-flex-fields-app-v1.6.4) (2026-09-02)
 
 
