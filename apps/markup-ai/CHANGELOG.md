@@ -1,5 +1,33 @@
 # Changelog
 
+## [1.5.0](https://github.com/cld-et/contentful-marketplace-partner-apps/compare/markup-ai-contentful-app-v1.4.0...markup-ai-contentful-app-v1.5.0) (2026-11-17)
+
+
+### Features
+
+* introduce style agent based scanning [INTEG-3958] ([#8194](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8194)) ([20bc65a](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/20bc65aafd3ae5927e79ef4255ecacc2bc004afe))
+* scan document metadata, remove issue-card feedback, add org switcher, default grouped view [] ([#8209](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8209)) ([3e46c83](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/3e46c831cd5227dec5df563f5e12d9cab073be8c))
+
+
+### Bug Fixes
+
+* **deps:** bump @contentful/react-apps-toolkit from 1.2.22 to 1.2.23 in /apps/markup-ai ([#8638](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8638)) ([f2504f5](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/f2504f58617ea6ce2037cd5c0d1c09cb3e47e124))
+* **deps:** bump defu from 6.1.4 to 6.1.6 in /apps/markup-ai ([#8076](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8076)) ([5072fa3](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/5072fa3890379ae1b89d37efb3424c8d40d9dc48))
+* **deps:** bump dompurify from 3.4.0 to 3.4.9 in /apps/markup-ai ([#8381](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8381)) ([6b3bac9](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/6b3bac996f986174ad78d684bc06909a70f783c6))
+* **deps:** bump dompurify from 3.4.9 to 3.4.11 in /apps/markup-ai ([#8420](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8420)) ([312429c](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/312429c0d8a3be0c2a1f218df537d31e81753304))
+* **deps:** bump esbuild, @contentful/app-scripts, @vitejs/plugin-react and vite in /apps/markup-ai ([#8320](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8320)) ([026c8d5](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/026c8d5b8b0742f06b34b4ac0942f70f03e8b1db))
+* **deps:** bump flatted from 3.3.3 to 3.4.2 in /apps/markup-ai ([#7966](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7966)) ([ce99d3e](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/ce99d3e8fb2796972a3a227a21fe38034eeb2212))
+* **deps:** bump js-cookie from 3.0.5 to 3.0.7 in /apps/markup-ai ([#8210](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8210)) ([cfe4c44](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/cfe4c44df79829cb929f85e04b8a07ccad0bf6da))
+* **deps:** bump picomatch from 4.0.3 to 4.0.4 in /apps/markup-ai ([#8012](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8012)) ([dfe252c](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/dfe252ca088bbf495787bd8a5b31d300c413b6ee))
+* **deps:** bump qs from 6.15.0 to 6.15.2 in /apps/markup-ai ([#8244](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8244)) ([8972582](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/89725826e7fe493aef16c9e9fc81eac997824f96))
+* **deps:** bump the production-dependencies group in /apps/markup-ai with 12 updates ([#7911](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/7911)) ([e4976f7](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/e4976f752790c59867d39a66b835b1a9ed9e0bda))
+* **deps:** bump undici from 7.24.5 to 7.28.0 in /apps/markup-ai ([#8421](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8421)) ([5589a17](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/5589a17cfca84e9481f7d338c0cedb7389e05191))
+* **deps:** bump yaml from 1.10.2 to 1.10.3 in /apps/markup-ai ([#8013](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8013)) ([b3f7fe1](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/b3f7fe169f6ea57a1c57e69b3fd41cd55d110a58))
+* **deps:** update codemirror ([#8742](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8742)) ([12354bc](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/12354bc3739cf220929ef2342f9018d014a0cb1a))
+* **deps:** update dependency dompurify to v3.4.12 [security] ([#8691](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8691)) ([baa97cd](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/baa97cd7adcad8f27103551234a2740ce043c074))
+* **deps:** update dependency dompurify to v3.4.13 [security] ([#8736](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8736)) ([8cf8a4a](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/8cf8a4a3e4fe4ef81fdd9429e0431d9372456d6e))
+* **deps:** update dependency markdown-it to v14.2.0 [security] ([#8692](https://github.com/cld-et/contentful-marketplace-partner-apps/issues/8692)) ([39c8613](https://github.com/cld-et/contentful-marketplace-partner-apps/commit/39c861383e9d0e93a2e2b405877dff0fe3ce203f))
+
 ## [1.4.0](https://github.com/contentful/marketplace-partner-apps/compare/markup-ai-contentful-app-v1.3.1...markup-ai-contentful-app-v1.4.0) (2026-06-23)
 
 
